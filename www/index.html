@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <title>MediaPlayer</title>
+    </head>
+    <body>
+        <section class="page active" id="home">
+            <header>Playlist</header>
+            <main class="homeMain">
+                
+            </main>
+        </section>
+
+        <section class="page" id="player">
+            <header>
+                <button id="back">Back</button>
+                Playr
+            </header>
+            <main>
+                <p class="playerTitle"></p>
+                <div class="container">
+                    <div class="loader"><span></span></div>
+                </div>
+                <span class="spanTitle">Playing: </br> ---</span>
+                <div class="bar"></div>
+                <span class="spanPos">0 / 0</span>
+                <div id="playbackB">
+                    <button id="rew-btn"><i class="material-icons md-36">fast_rewind</i></button>
+                    <button id="play-btn"><i class="material-icons md-36">play_arrow</i></button>
+                    <button id="pause-btn"><i class="material-icons md-36">pause</i></button>
+                    <button id="ff-btn"><i class="material-icons md-36">fast_forward</i></button>
+                </div>
+                <div id="volumeB">
+                    <button id="up-btn"><i class="material-icons md-36">volume_up</i></button>
+                    <button id="down-btn"><i class="material-icons md-36">volume_down</i></button>
+                </div>
+                <script src="cordova.js"></script>
+                <script src="js/index.js"></script>
+            </main>
+        </section>
+    </body>
+</html>
